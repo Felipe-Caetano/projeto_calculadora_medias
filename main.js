@@ -48,7 +48,7 @@ const form = document.getElementById('form-atividade');
                 function atualizaMediaFinal() {
                     const mediFinal = calculaMediaFinal();
 
-                    document.getElementById('media-final-valor').innerHTML = mediFinal
+                    document.getElementById('media-final-valor').innerHTML = mediFinal.toFixed(2);
                     document.getElementById('media-final-resultado').innerHTML = mediFinal >= notaMinima ? spanAprovado : spanReprovado;
                     
                 }
